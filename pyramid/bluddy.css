@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap%27);
+*{
+    font-family: 'poppins', cursive;
+}
+body{
+    color:  rgb(147, 22, 22);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background-size: 100vh, 200px;
+}
+.greetings {
+    font-size: 6rem;
+    font-weight: 900;
+}
+.greetings > span{
+    animation: glow 3s ease-in-out infinite;
+    -webkit-animation: glow 3s ease-in-out infinite;
+}
+@keyframes glow {
+    0%, 100%{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 26px
+    #ffffff, 0 0 38px #ffffff, 0 0 110px #fffdfd;
+    }
+    10%, 90%{
+    color:  rgb(147, 22, 22);
+    text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2) {
+    animation-delay: 3.5s;
+}
+.greetings > span:nth-child(3) {
+    animation-delay: 4s;
+}
+.greetings > span:nth-child(4) {
+    animation-delay: 4.5s;
+}
+.greetings > span:nth-child(5) {
+    animation-delay: 5s;
+}
